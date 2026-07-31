@@ -1,0 +1,30 @@
+# Local secrets and environment overrides.
+.env
+.env.*
+!.env.example
+
+# Python-generated files.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# IDE and operating-system files.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local data and Spark output.
+data/*
+!data/.gitkeep
+*.log
+
+# Build and packaging files.
+build/
+dist/
+*.egg-info/
