@@ -74,12 +74,11 @@ def upsert_payment_batch(batch_df: DataFrame, batch_id: int, settings: SparkSett
 
     total = 0
     try:
-        with connection:
-            with connection.cursor() as cursor:
-                for chunk in _chunk_rows(batch_df.toLocalIterator(), chunk_size=1000):
-                    values = [_row_to_values(row) for row in chunk]
-                    execute_values(cursor, UPSERT_SQL, values, page_size=500)
-                    total += len(values)
+        with connection, connection.cursor() as cursor:
+            for chunk in _chunk_rows(batch_df.toLocalIterator(), chunk_size=1000):
+                values = [_row_to_values(row) for row in chunk]
+                execute_values(cursor, UPSERT_SQL, values, page_size=500)
+                total += len(values)
     finally:
         connection.close()
 

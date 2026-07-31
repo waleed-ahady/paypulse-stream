@@ -6,7 +6,6 @@ from datetime import UTC, datetime
 
 import pandas as pd
 import streamlit as st
-
 from db import (
     fetch_currencies,
     fetch_hourly_activity,

@@ -22,7 +22,7 @@ class SparkSettings:
     log_level: str
 
     @classmethod
-    def from_environment(cls) -> "SparkSettings":
+    def from_environment(cls) -> SparkSettings:
         """Build settings from Docker Compose environment variables."""
 
         return cls(

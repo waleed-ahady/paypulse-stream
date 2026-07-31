@@ -9,7 +9,6 @@ import pandas as pd
 import psycopg2
 from psycopg2.extensions import connection
 from psycopg2.extras import RealDictCursor
-
 from settings import DashboardSettings
 
 

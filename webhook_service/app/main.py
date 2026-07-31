@@ -9,7 +9,7 @@ import stripe
 from fastapi import FastAPI, HTTPException, Request, status
 from fastapi.concurrency import run_in_threadpool
 
-from app.kafka_producer import KafkaPublishError, KafkaPublisher
+from app.kafka_producer import KafkaPublisher, KafkaPublishError
 from app.settings import Settings, get_settings
 from app.stripe_mapper import UnsupportedStripeEventError, map_stripe_event
 
