@@ -24,21 +24,27 @@ The Streamlit dashboard reads the processed data from PostgreSQL and displays pa
 
 
 Stripe test payment
+
         |
         v
 Stripe webhook
+
         |
         v
 FastAPI
+
         |
         v
 Apache Kafka
+
         |
         v
 Apache Spark Structured Streaming
+
       /   \
      v     v
 PostgreSQL  Rejected records
+
      |
      v
 Streamlit dashboard
