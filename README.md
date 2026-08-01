@@ -76,20 +76,6 @@ PostgreSQL storage
 A live Streamlit dashboard
 Automated testing with GitHub Actions
 
-Project structure:
-paypulse-stream/
-├── dashboard/
-├── database/
-├── data/
-├── docs/
-├── scripts/
-├── spark_processor/
-├── webhook_service/
-├── .github/
-├── docker-compose.yml
-├── README.md
-└── .env.example
-
 The main folders are:
 
 webhook_service/ contains the FastAPI webhook application.
