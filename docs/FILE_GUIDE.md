@@ -1,7 +1,5 @@
 # File guide and execution order
 
-This guide explains every meaningful repository file. Empty `__init__.py` files mark Python packages and allow reliable imports.
-
 ## Root files
 
 - `README.md`: setup instructions, commands, architecture summary, and GitHub publication checklist.
@@ -14,13 +12,6 @@ This guide explains every meaningful repository file. Empty `__init__.py` files 
 - `requirements-dev.txt`: local testing and linting tools.
 - `LICENSE`: MIT licence for public GitHub use.
 - `SECURITY.md`: rules for secrets, test data, and local-only networking.
-
-## Documentation and placeholder directories
-
-- `docs/ARCHITECTURE.md`: explains the payment event journey and reliability decisions.
-- `docs/FILE_GUIDE.md`: provides this complete file inventory and runtime order.
-- `docs/images/.gitkeep`: preserves the future screenshots directory in Git.
-- `data/.gitkeep`: preserves the future local-data directory in Git while generated data stays ignored.
 
 ## Database
 

@@ -50,6 +50,13 @@ PostgreSQL  Rejected records
 Streamlit dashboard
 
 
+## Dashboard Preview
+
+The Streamlit dashboard provides a live overview of payment activity, including successful and failed transactions, payment trends, and recent events processed by the pipeline.
+
+![PayPulse Stream Dashboard](docs/images/dashboard.png)
+
+
 Technologies used:
 
 Stripe is used to create realistic test payments.
@@ -264,7 +271,3 @@ PayPulse Stream is designed as a local portfolio project.
 It uses one Kafka broker, one Spark process, local PostgreSQL, local Docker networking, and Stripe test-mode payments.
 A production version would require stronger security, encrypted connections, monitoring, backups, multiple Kafka brokers, and scalable Spark infrastructure.
 
-
-License
-
-This project is licensed under the MIT License.
